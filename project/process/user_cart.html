@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- PUBLIC USER (UNREGISTERED MEMBER) ADD TO CART -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKOUT CINEMA</title>
+    <link rel="icon" href="images/blackout.png">
+	<link href="user_cart.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container">
+		<!-- START CART TABLE -->
+		<div id="shopping-cart">
+			<div class="cart-title">
+				<h1>CART</h1>
+			</div>
+			<a id="btn-empty" onclick="emptyCart()">DELETE ALL</a>
+			<table class="cart-table" cellpadding="10" cellspacing="1">
+				<thead>
+					<tr>
+						<th class="text-right movie">Movie</th>
+						<th class="text-right price" width="10%">Price</th>
+						<th class="text-right quantity" width="7%">Quantity</th>
+						<th class="text-right subtotal" width="10%">Sub Total</th>
+					</tr>
+				</thead>
+				<!-- LOAD DATA ON ADD TO CART -->
+				<tbody id="cart-table-body"></tbody>
+				<tfoot>
+					<tr>
+						<td class="text-right total">Total</td>
+						<td id="itemAmount" class="text-right" colspan="2"></td>
+						<td id="totalAmount" class="text-right"></td>
+					</tr>
+				</tfoot>
+			</table>
+			<!-- START POPUP TO CHOOSE SEAT NOW OR LATER -->
+			<div class="popup-container">
+				<a id="btn-proceed" onclick="openPopup()">PROCEED</a>
+				<div class="popup" id="popup">
+					<h2>Would you like to choose seat now or later at the counter?</h2>
+					<a id="choose" href="user_booking.html">NOW</a>
+					<a id="checkout" href="login.php">LATER, CHECKOUT NOW</a>
+					<button type="button" class="close-btn" onclick="closePopup()">back</button>
+				</div>
+			</div>
+			<!-- END POPUP TO CHOOSE SEAT NOW OR LATER -->
+		</div>
+		<!-- END CART TABLE -->
+
+		<!-- To load HTML from JavaScript code -->
+		<div id="product-grid">
+			<div class="cart-title">
+				<h1>MOVIE</h1>
+			</div>
+			<div id="product-item-container"></div>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="user_cart.js"></script>
+</body>
+</html>
