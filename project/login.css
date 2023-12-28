@@ -1,0 +1,171 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, black, #ceb7d4);
+    font-family: sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+
+}
+
+.hover-logo {
+    position: absolute;
+    top: 0; 
+    left: 0;  
+    display: none; 
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar:hover .hover-logo {
+    display: inline; 
+}
+
+h1 {
+    margin: 10px;
+    margin-bottom: 30px;
+    color: rgb(63, 63, 4);
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    max-width: 340px;
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    padding: 15px 0px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, black, #ceb7d4);
+}
+
+.content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+}
+
+form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    margin-right: 70px;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: black;
+}
+
+.button {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-submit {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background:black;
+    padding: 0px 10px;
+}
+
+.btn-submit:hover {
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, black, #a629c5);
+} 
+
+.btn-account {
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.734);
+    font-size: 15px;
+}
+
+.btn-account:hover {
+    text-decoration: underline;
+}
+
+ @media(max-width: 584px){
+    .container{
+      max-width: 100%;
+}
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category {
+    width: 100%;
+  }
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+  @media(max-width: 459px){
+  .container .content .category {
+    flex-direction: column;
+  }
+}

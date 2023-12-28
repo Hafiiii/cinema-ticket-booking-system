@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- PUBLIC USER (UNREGISTERED MEMBER) DASHBOARD -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKOUT CINEMA</title>
+    <link rel="icon" href="images/blackout.png">
+	<link rel="stylesheet" href="food&beverages.css">
+	<script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+
+	<body style="background-color: black;">
+	    <!--Navigation bar-->
+		<script id = "replace_with_navbar" src = "user_navigationbar.js"></script>
+		<!--end of Navigation bar-->
+		<br>
+
+		<div class="header">
+			<p class="logo">WELCOME TO FOOD & BEVERAGES</p>
+			<div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+		</div>
+		<div class="container">
+			<div id="root"></div>
+			<div class="sidebar">
+				<div class="head"><p>My Cart</p></div>
+				<div id="cartItem">Your cart is empty</div>
+				<div class="foot">
+					<h3>Total</h3>
+					<h3 id="total">RM 0.00</h3>
+				</div>
+				<br/>
+					<div class="popup-container">
+						<button type="submit" class="popup-btn" onclick="openPopup()">Checkout</button>
+						<div class="popup" id="popup">
+							<h2>Proceed to payment?</h2>
+							<a id="checkout" href="member_receipt.html">Payment</a>
+							<button type="button" class="close-btn" onclick="closePopup()">back</button>
+						</div>
+					</div>
+			</div>
+		</div>	
+
+		<!-- START FOOTER -->
+		<div class="footer">
+			<p>Copyright Reserved © 2023 BLACKOUT CINEMA Sdn Bhd. All Rights Reserved.</p>
+		</div>
+		<!-- END FOOTER -->
+
+		<script src="food&beverages.js"></script>
+	</body>
+</html>
+		

@@ -1,0 +1,444 @@
+@font-face {
+    font-family: "Gotham-medium";
+    font-weight: 400;
+    font-display: fallback;
+    src: url("/fonts/Gotham-Medium.ttf") format("truetype");
+}
+
+body, html {
+    background-color: black;
+    color: white;
+    font-family: "Gotham-medium";
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    @media (max-width: 768px) {
+      font-size: 1.3em;
+    }
+}
+
+.text-shadow {
+    font-style: bold;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 2px 10px black;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    letter-spacing: 0.2em;
+    animation: flicker 1.0s ease-in-out infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+      opacity: 0.5;
+      text-shadow: 2px 2px 10px $blue;
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 2px 2px 20px $blue;
+    }
+}
+
+
+/* BUTTON FOR TIME */
+.btn-group button {
+    background-color:rgba(54, 53, 53, 0.9);
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    border: 1.5px solid #413f3d;
+    border-radius: 1px;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+/*clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* BOOK BUTTON*/
+.button {
+    display: inline-block;
+    padding: 9px 18px;
+    color: rgba(255, 255, 255, 0.629);
+    text-align: center;
+    text-decoration: none;
+    border: 1.5px solid #413f3d;
+    border-radius: 1px;
+}
+
+.button:hover {
+    background: rgba(255,255,255,0.4);
+    color: black;
+    cursor: pointer;
+}
+
+html, body{
+    margin: 0;
+    background: black;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.movie_card {
+    position: relative;
+    display: block;
+    width: 900px;
+    height: 380px;
+    margin: 50px auto; 
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+    &:hover{
+      transform: scale(1.02);
+      transition: all 0.4s;
+    }
+}
+
+.info_section {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-blend-mode: multiply;
+      z-index: 2;
+      border-radius: 10px;
+}
+.movie_header {
+    position: relative;
+    padding: 25px;
+    height: 40%;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 400;
+}
+
+h4 {
+    color: #9ac7fa;
+    font-weight: 400;
+}
+
+.minutes {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.13);
+}
+
+.type {
+    display: inline-block;
+    color: #cee4fd;
+    margin-left: 10px;
+}
+      
+.locandina {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    height: 120px;
+    box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
+}
+    
+.movie_desc {
+    padding: 25px;
+    height: 50%;
+    
+}
+
+.text {
+    color: #cfd6e1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    color: rgba(255,255,255,0.4);
+    transition: color 0.3s;
+    transition-delay: 0.15s;
+    margin: 0 10px;
+}
+
+&:hover {
+    transition: color 0.3s;
+    color: rgba(255,255,255,0.8);
+}
+
+i {
+    font-size: 19px;
+    cursor: pointer;
+}
+       
+.blur_back {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%; right: 0;
+    background-size: cover;
+    border-radius: 11px;
+  }
+
+
+@media screen and (min-width: 768px) {
+  .movie_header {
+    width: 60%;
+  }
+  
+  .movie_desc {
+    width: 50%;
+  }
+  
+  .info_section {
+    background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
+  }
+  
+  .blur_back {
+    width: 80%;
+    background-position: -100% 10% !important;  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie_card {
+    width: 95%;
+    margin: 70px auto; 
+    min-height: 350px;
+    height: auto;
+  }
+  
+  .blur_back {
+    width: 100%;
+    background-position: 50% 50% !important;  
+  }
+  
+  .movie_header {
+    width: 100%;
+    margin-top: 85px;
+  }
+  
+  .movie_desc {
+    width: 100%;
+  }
+  
+  .info_section {
+    background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
+    display: inline-grid;
+  }
+}
+
+#avatar {
+    box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.5);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(255, 51, 0, 0.5);
+    }
+}
+
+.avatar_back{
+    background: url("https://w0.peakpx.com/wallpaper/625/884/HD-wallpaper-avatar-the-way-of-water-2-avatar-2-avatar-the-way-of-water-2022-movies-movies.jpg");
+}
+
+#connect{
+    box-shadow: 0px 0px 150px -45px rgba(19, 160, 134, 0.6);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(19, 160, 134, 0.6);
+    }
+}
+
+.connect_back{
+    background: url("https://www.pinkvilla.com/imageresize/nayanthara_movie_connect.jpg?width=752&t=pvorg");
+}
+
+#escape{
+    box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
+    }
+}
+
+.escape_back{
+    background: url("https://www.cinema.com.my/images/movies/2023/7escape202000_450.jpg");
+}
+
+#kampung{
+    box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
+    }
+}
+  
+.kampung_back{
+      background: url("https://asiasamachar.com/wp-content/uploads/2022/11/Mundey-Kampung-Dey_movie_1.jpg");
+}
+
+#kkn{
+    box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
+    }
+}
+  
+.kkn_back{
+      background: url("https://www.mstar.com.my/image/830/553?url=https%3A%2F%2Fapicms.mstar.com.my%2Fuploads%2Fimages%2F2022%2F05%2F15%2F1586155.jpg");
+}
+
+#maenak_reborn{
+    box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
+    }
+}
+  
+.maenak_reborn_back{
+      background: url("https://popcornsg.s3.amazonaws.com/gallery/1670198507-mae-nak-.jpg");
+}
+
+#mechamato{
+    box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
+    }
+}
+  
+.mechamato_back{
+      background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy25frtuCGSsQH4TKavMlOv1b-Q2gM43KQTTXXd5hU4Nio8WPri76inIj2ZWd62k1dAYPAb5tAqR83kZ06l7JOawUCH36kUcSdNNqHbEFHEK0OM9L_cCl28T-cJcGa0YXsvaKuEztcXrHVHYYZJBoethOEhdaNt7JCwoHFbvLFyc0G6IjqdaVBzXmZyw/s2048/Mechamato_Movie_SceneShot%20(1).png");
+}
+
+#puss{
+    box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
+    }
+}
+  
+.puss_back{
+      background: url("https://toonado.com/cdn-cgi/image/fit=cover,width=670,height=377,quality=75/images/articles/banners/5937.jpg");
+}
+
+#rohit{
+    box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
+    }
+}
+  
+.rohit_back{
+      background: url("https://static.tnn.in/photo/msid-96445206,imgsize-190262,updatedat-1671775683854,width-200,height-200,resizemode-75/96445206.jpg");
+}
+
+#slime{
+    box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
+    }
+}
+  
+.slime_back{
+      background: url("https://www.animenewsnetwork.com/thumbnails/crop1200x630gFK/cms/review/192259/tensuramovie.jpg");
+}
+
+#violent{
+    box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
+    }
+}
+  
+.violent_back{
+      background: url("https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2022/09/violent-night-2.png?w=1071&ssl=1");
+}
+
+#zaara{
+    box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
+    margin-bottom: 200px;
+    &:hover{
+      box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
+    }
+}
+  
+.zaara_back{
+      background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiZae0l54BJweFByx1M5K011CkBphwFoIgUbga85kp-VZLFCSJepcJvBQmnb0-z3EbhY7lABp10CJx2tedTFUw1eNhGrH7-ojklrpvTVGQS7aFS0JLjj2kLT3JqLn1okd5ubG7xZXmBY4LkGKVPoUC6XI_zjTzskw9zkJwjSgmtnWKu9af1rcGZ-44DA/s16000/Filem%20Zaara.webp");
+}
+
+
+/* SEARCH BAR FILTER */
+.is-hidden { 
+    display: none; 
+}
+
+.search-bar {
+    margin-right: 100px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.search-title {
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.search-img {
+    width: 17px;
+    height: 14px;
+}
+
+#searchbox {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.search-bar ::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(42, 42, 42, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}

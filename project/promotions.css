@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Gotham-medium";
+}
+  
+.hero-image {
+    background-image: url("cny.jpg");
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    margin: 12px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+}
+  
+.coupon {
+    border: 5px dotted #bbb;
+    width: 60%;
+    border-radius: 15px;
+    margin: 15px;
+    max-width: 600px;
+}
+
+.promo {
+    background: rgb(99, 12, 12);
+    padding: 2px;
+    margin: 4px;
+}
+  
+.expire {
+    color: red;
+    margin: 5px;
+}

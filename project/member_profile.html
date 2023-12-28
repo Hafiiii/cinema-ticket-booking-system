@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- PROFILE PAGE -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+    <link rel="icon" href="images/blackout.png">
+    <link rel = "stylesheet" type = "text/css" href = "member_profile.css"/>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html"><img class="logo" src="images/blackout.png"></a>
+    <a href="index.html"><img class="hover-logo" src="images/blackin.png"></a>
+  </div>
+
+  <div class = "container">
+    <div class = "content">
+      <form action = "member_editprofile.php" method = "POST">
+        <div class = "user-details">
+            <h1>Your Profile</h1>
+          <!--FULLNAME-->
+          <div class = "input-box">
+            <span class = "details">Full Name</span>
+            <input type = "text" name="name" placeholder = "Full name" required>
+          </div>
+          <!--EMAIL-->
+          <div class = "input-box">
+            <span class = "details">Email</span>
+            <input type = "text" name="email" placeholder = "Enter your email" required>
+          </div>
+          <!--PASSWORD-->
+          <div class = "input-box">
+            <span class = "details">Password</span>
+            <input type = "password" name="password" placeholder = "Enter your password" required>
+          </div>
+          <!--CONFIRM PASSWORD-->
+          <div class = "input-box">
+            <span class = "details">Confirm Password</span>
+            <input type = "password" name="cpassword" placeholder = "Confirm your password" required>
+          </div>
+        </div>
+        <div class = "button">
+          <input class="btn-submit" type = "submit" value = "EDIT PROFILE" name="edit">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

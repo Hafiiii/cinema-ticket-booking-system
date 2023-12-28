@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- REGISTER PAGE -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="icon" href="images/blackout.png">
+    <link rel = "stylesheet" type = "text/css" href = "register.css"/>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html"><img class="logo" src="images/blackout.png"></a>
+        <a href="index.html"><img class="hover-logo" src="images/blackin.png"></a>
+    </div>
+
+    <div class = "container">
+        <div class = "content">
+            <form action = "register.php" method = "POST" required>
+                <div class = "user-details">
+                    <h1>Welcome to Blackout Cinema</h1>
+                    <!--FULLNAME-->
+                    <div class = "input-box">
+                      <span class = "details">Full Name</span>
+                      <input type = "text" name="name" placeholder = "Enter your full name">
+                    </div>
+                    <!--EMAIL-->
+                    <div class = "input-box">
+                      <span class = "details">Email</span>
+                      <input type = "name" name="email" placeholder = "Enter your email">
+                    </div>
+                    <!--PASSWORD-->
+                    <div class = "input-box">
+                      <span class = "details">Password</span>
+                      <input type = "password" name="password" placeholder = "Enter your password">
+                    </div>
+                    <!--CONFIRM PASSWORD-->
+                    <div class = "input-box">
+                      <span class = "details">Confirm Password</span>
+                      <input type = "password" name="cpassword" placeholder = "Confirm your password">
+                    </div>
+                </div>
+                <select name="role" class="box">
+                    <option value="member">member</option>
+                    <option value="admin">admin</option>
+                </select>
+                <div class = "button">
+                    <input class="btn-submit" type = "submit" value = "Register">
+                    <!--ALREADY HAVE AN ACCOUNT LINK-->
+                    <a class="btn-account" href = "login.html" >Already have an account?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+

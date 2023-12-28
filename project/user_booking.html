@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- PUBLIC USER BOOKING SEAT -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLACKOUT CINEMA</title>
+    <link rel="icon" href="images/blackout.png">
+    <link rel="stylesheet" href="booking.css" />
+</head>
+
+<body>
+    <!-- START SEAT GUIDE (AVAILABLE, SELECTED OR SOLD SEAT) -->
+    <div class="movie-container">
+        <div id="movie-seat">
+            <ul class="seat-guide">
+                <li>
+                    <div class="seat available"></div>
+                    <p>Available</p>
+                </li>
+                <li>
+                    <div class="seat selected"></div>
+                    <p>Selected</p>
+                </li>
+                <li>
+                    <div class="seat sold"></div>
+                    <p>Sold</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END SEAT GUIDE (AVAILABLE, SELECTED OR SOLD SEAT) -->
+
+    <!-- START SEAT ROW -->
+    <div class="seat-container">
+        <div class="screen"></div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+    <!-- END SEAT ROW -->
+
+    <!-- START POPUP TO BUY F&B OR CHECKOUT -->
+    <div class="popup-container">
+        <button type="submit" class="popup-btn" onclick="openPopup()">PROCEED</button>
+        <div class="popup" id="popup">
+            <h2>Would you like food & beverages?</h2>
+            <a id="absolutely" href="member_food&beverages.html">ABSOLUTELY</a>
+            <a id="checkout" href="login.php">CHECKOUT</a>
+            <button type="button" class="close-btn" onclick="closePopup()">back</button>
+        </div>
+    </div>
+    <!-- END POPUP TO BUY F&B OR CHECKOUT -->
+
+    <script src="booking.js"></script>
+</body>
+</html>

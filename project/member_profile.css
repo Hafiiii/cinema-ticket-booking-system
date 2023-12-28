@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gotham-medium";
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, black, #ceb7d4);
+  }
+  
+  h1 {
+      margin: 30px 60px;
+      margin-bottom: 10px;
+      color: rgb(63, 63, 4);
+  }
+  
+  .navbar {
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+  
+  }
+  
+  .hover-logo {
+    position: absolute;
+    top: 0; 
+    left: 0;  
+    display: none; 
+    width: 100px;
+    height: 100px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .navbar:hover .hover-logo {
+    display: inline; 
+  }
+  
+  .container {
+    max-width: 450px;
+    width: 100%;
+    height: 85%;
+    background-color: #fff;
+    padding: 20px 80px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .container .title::before {
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, black, #ceb7d4);
+  }
+  
+  .content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  
+  form .user-details .input-box {
+    margin: 0 10px 60px 0;
+    margin-bottom: 5px;
+    width: calc(100% / 1 - 5px);
+
+  }
+  
+  form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid {
+    border-color: black;
+  }
+  
+  .btn-submit {
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background:black;
+     padding: 10px 10px;
+  }
+  
+  .btn-submit:hover {
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, black, #a629c5);
+  } 
+  
+  .btn-account {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  
+  }
+  
+  .btn-account:hover {
+    text-decoration: underline;
+  }
+  
+   @media(max-width: 584px){
+   .container{
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category {
+      width: 100%;
+    }
+    .content form .user-details {
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar {
+      width: 5px;
+    }
+  }
+  
+    @media(max-width: 459px){
+    .container .content .category {
+      flex-direction: column;
+    }
+  }

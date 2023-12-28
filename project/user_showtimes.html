@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- PUBLIC USER (UNREGISTERED MEMBER) SHOWTIMES -->
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOWTIMES</title>
+    <link rel="icon" href="images/blackout.png">
+    <link rel = "stylesheet" type = "text/css" href = "showtimes.css"/>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <script id = "replace_with_navbar" src = "user_navigationbar.js"></script>
+    <!--end of Navigation bar-->
+    <br><br><br><br>
+      
+    <!-- START SHOWTIMES HEADER -->
+    <section>
+        <h1 class = "text-shadow">- SHOWTIMES -</h1>
+    </section>
+    <!-- END SHOWTIMES HEADER -->
+    <br><br><br>
+    
+    <!-- START INFORMATION FOR MOVIES -->
+    <div class="movie-showtimes">
+        <!-- SEARCH BAR FILTER FOR BOTH CATEGORIES: SHOWING NOW & COMING SOON -->
+        <div class="search-bar">
+            <label for="searchbox" class="search-title"><img class="search-img" src="images/search.png"></label>
+            <input id="searchbox" type="search"  placeholder="Enter movie name">
+        </div>
+
+
+        <div class = "movie_card" id = "avatar">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/avatar.jpg"/>
+                    <h1>Avatar: The Way of Water</h1>
+                    <h4>2022, James Cameron</h4>
+                    <span class = "minutes">192 min</span>
+                  <p class = "type">Sci-fi, Action</p>
+                </div>
+                <div class = "movie_desc">
+                    <p class = "text">
+                        Set more than a decade after the events of the first film, "Avatar: The Way of Water" begins to tell the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>10:00 AM</button>
+                        <button>1:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "blur_back avatar_back"></div>
+        </div>
+      
+        <div class = "movie_card" id = "connect">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/connect.jpg"/>
+                    <h1>Connect</h1>
+                    <h4>2022, Ashwin Saravanan</h4>
+                    <span class = "minutes">140 min</span>
+                    <p class = "type">Mystery</p>
+                </div>
+                <div class = "movie_desc">
+                    <p class = "text">
+                        In a country where the government imposed a national curfew and a single mother, 
+                        Nayanthara, notices eerie changes in her daughter's behaviour. 
+                        On getting virtual help from a pastor played by Anupam Kher who proposes an online exorcism.
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>2:00 PM</button>
+                        <button>7:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blur_back connect_back"></div>
+        </div>
+        
+        <div class = "movie_card" id = "escape">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/escape.jpg"/>
+                    <h1>Escape</h1>
+                    <h4>2022, Ikhwansha Hazer</h4>
+                    <span class="minutes">148 min</span>
+                    <p class="type">Action, Adventure, Mystery</p>
+                </div>
+                <div class="movie_desc">
+                    <p class="text">
+                        Trapped in a mysterious room with no memory of his true identity, Adam must race against time and uncover 
+                        his true self in order to put an end to a terrorist group that is on a mission to destroy his country.
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>11:00 AM</button>
+                        <button>6:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blur_back escape_back"></div>
+        </div>
+          
+        <div class = "movie_card" id = "kampung">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/kampung.jpg"/>
+                    <h1>Mundey Kampung Dey</h1>
+                    <h4>2022, Mansher Singh</h4>
+                    <span class="minutes">138 min</span>
+                    <p class="type">Comedy</p>
+                </div>
+                <div class="movie_desc">
+                    <p class="text">
+                        Three childhood friends from a backwater village move to Kuala Lumpur in search of a better life. 
+                        However, their optimistic plans are cut short when they come across a parcel belonging to a huge player in KL`s dark underworld. 
+                        There`s something valuable inside the parcel, and this boss lady will kill to get it back.
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>10:00 AM</button>
+                        <button>2:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                  </div>
+                </div>
+            </div>
+            <div class="blur_back kampung_back"></div>
+        </div>
+
+        <div class = "movie_card" id = "kkn">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/kkn.jpg"/>
+                    <h1>KKN di Desa Penari</h1>
+                    <h4>2022, Firdauzi Trizkiyanto</h4>
+                    <span class = "minutes">130 min</span>
+                    <p class = "type">Horror</p>
+                </div>
+                <div class = "movie_desc">
+                    <p class = "text">
+                        Six students who had to carry out KKN in a remote village are warned not to cross the 
+                        boundary of the forbidden gate that leading to the mysterious place that may related to the 
+                        figure of a beautiful dancer who began to disturb them.
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>1:00 PM</button>
+                        <button>9:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                  </div>
+                </div>
+            </div>
+            <div class = "blur_back kkn_back"></div>
+        </div>
+
+        <div class = "movie_card" id = "maenak_reborn">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/maenak_reborn.jpg"/>
+                    <h1>Maenak Reborn</h1>
+                    <h4>2022, Adirek Phothong</h4>
+                    <span class = "minutes">80 min</span>
+                    <p class = "type">Horror, Thriller</p>
+                </div>
+                <div class = "movie_desc">
+                    <p class = "text">
+                        Tina adores the character of Mae nak and she is pregnant . Her husband, Mark who works in movie industry needs more money to make the production going on. His old friend, Chutimon help him with more money. One day Tina is attacked by some man who rapes her and kills the baby in her stomach. No one knows whose behind this incident, but the spirit of Mae Nak knows everything..
+                        Now she about to come back..
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>4:00 PM</button>
+                        <button>8:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                  </div>
+                </div>
+            </div>
+            <div class = "blur_back maenak_reborn_back"></div>
+        </div>
+
+        <div class = "movie_card" id = "mechamato">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/mechamato.jpg"/>
+                    <h1>Mechamato Movie</h1>
+                    <h4>2022, Nizam Razak</h4>
+                    <span class = "minutes">122 min</span>
+                    <p class = "type">Action, Comedy</p>
+                </div>
+                <div class = "movie_desc">
+                    <p class = "text">
+                        A young boy named Amato came discovered the powerful robot MechaBot after a mysterious spaceship crash-landed on Earth. 
+                        Amato can now utilize MechaBot's special ability to Mechanize common objects into high-tech devices thanks to his success in outsmarting the robot 
+                        and becoming its master. Unknown to him, the cybernetic alien Grakakus is after MechaBot and would stop at nothing to obtain it for his own evil goals.
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>11:00 AM</button>
+                        <button>1:30 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class = "blur_back mechamato_back"></div>
+        </div>
+
+        <div class = "movie_card" id = "puss">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/puss_in_boots.jpg"/>
+                    <h1>Puss in Boots: The Last Wish</h1>
+                    <h4>2022, Joel Crawford</h4>
+                    <span class = "minutes">100 min</span>
+                    <p class = "type">Adventure, Comedy</p>
+                </div>
+                <div class = "movie_desc">
+                    <p class = "text">
+                        Puss in Boots discovers that his passion for adventure has taken its toll: he has burned through eight of his nine lives. 
+                        Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>11:30 AM</button>
+                        <button>5:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                  </div>
+                </div>
+            </div>
+            <div class = "blur_back puss_back"></div>
+        </div>
+
+        <div class = "movie_card" id = "rohit">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/rohit_shettys.jpg"/>
+                    <h1>Cirkus</h1>
+                    <h4>2022, Rohit Shetty</h4>
+                    <span class = "minutes">139 min</span>
+                    <p class = "type">Comedy, Drama</p>
+                </div>
+                <div class = "movie_desc">
+                    <p class = "text">
+                        Two sets of identical twins are accidentally separated at birth. Several years later, when they are coincidentally in 
+                        the same town, there is a lot of confusion and misunderstanding when people mistake them for each other.
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>1:00 PM</button>
+                        <button>6:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                  </div>
+                </div>
+            </div>
+            <div class = "blur_back rohit_back"></div>
+        </div>
+
+        <div class = "movie_card" id = "slime">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/slime.jpg"/>
+                    <h1>That Time I Got Reincarnated as a Slime the Movie: Scarlet Bond</h1>
+                    <h4>2022, Hiroshi Sato</h4>
+                    <span class = "minutes">108 min</span>
+                    <p class = "type">Animation</p>
+                </div>
+                <div class = "movie_desc">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class = "text">
+                        Corporate worker Mikami is stabbed by a random killer, is reborn to an alternate world. 
+                        But he is reborn as a slime. He is Thrown into this new world with the name Rimuru, 
+                        he begins his quest to create a world that's welcoming to all races
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>12:00 PM</button>
+                        <button>8:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                  </div>
+                </div>
+            </div>
+            <div class="blur_back slime_back"></div>
+        </div>
+
+        <div class = "movie_card" id = "violent">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/violent_night.jpg"/>
+                    <h1>Violent Night</h1>
+                    <h4>2022, Tommy Wirkola</h4>
+                    <span class = "minutes">112 min</span>
+                    <p class = "type">Action, Dark Comedy</p>
+                </div>
+                <div class = "movie_desc">
+                    <p class = "text">
+                        When a group of mercenaries attack the estate of a wealthy family, Santa Claus must step in to save the day (and Christmas).
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>3:00 PM</button>
+                        <button>9:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                  </div>
+                </div>
+            </div>
+            <div class = "blur_back violent_back"></div>
+        </div>
+
+        <div class = "movie_card" id = "zaara">
+            <div class = "info_section">
+                <div class = "movie_header">
+                    <img class = "locandina" src = "movies_poster/zaara.jpg"/>
+                    <h1>Zaara</h1>
+                    <h4>2022, Roy </h4>
+                    <span class = "minutes">110 min</span>
+                    <p class = "type">Horror, Thriller</p>
+                </div>
+                <div class = "movie_desc">
+                    <p class = "text">
+                        Remy is a handsome and funny lad who loves to race cars but he has a peculiarity - in that he is afraid of ghosts. 
+                        His fear is so extreme that he can`t even leave the house at night and still sleeps with his parents sometimes. He meets Maya at an auto 
+                        show and it is love at first sight. But he has a problem to go on dates with Maya when he is so afraid of the nights.
+                    </p>
+                    <br>
+                    <div class = "btn-group">
+                        <button>3:00 PM</button>
+                        <button>8:00 PM</button>
+                        <a href = "cart.html" class = "button" target = "_blank">Book Now</a>
+                  </div>
+                </div>
+            </div>
+            <div class = "blur_back zaara_back"></div>
+        </div>
+      </div>
+    <!-- END INFORMATION FOR MOVIES -->
+
+    <!-- START FOOTER -->
+    <div class="footer">
+        <p>Copyright Reserved © 2023 BLACKOUT CINEMA Sdn Bhd. All Rights Reserved.</p>
+    </div>
+    <!-- END FOOTER -->
+
+    <script src = "showtimes.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- LOGIN PAGE -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN to BLACKOUT CINEMA</title>
+    <link rel="icon" href="images/blackout.png">
+    <link rel = "stylesheet" type = "text/css" href = "login.css"/>
+</head>
+
+<body>          
+    <div class="navbar">
+        <a href="index.html"><img class="logo" src="images/blackout.png"></a>
+        <a href="index.html"><img class="hover-logo" src="images/blackin.png"></a>
+    </div>
+
+    <div class = "container">
+        <div class = "content">
+            <form name="myForm" action = "login.php" onsubmit="return validateForm()" method = "POST" required>
+                <div class = "user-details">
+                    <h1>Welcome Back!</h1>
+                    <!--EMAIL-->
+                    <div class = "input-box">
+                        <span class = "details">E-mail</span>
+                        <input type = "email" name="email" placeholder = "Enter email">
+                    </div>
+                    <!--PASSWORD-->
+                    <div class = "input-box">
+                        <span class = "details">Password</span>
+                        <input type = "password" name="password" placeholder = "Enter password">
+                    </div>
+                    <!--LOGIN BUTTON-->
+                    <div class = "button">
+                        <input class="btn-submit" type = "submit" value = "LOGIN">
+                        <!--DON"T HAVE AN ACCOUNT LINK-->
+                        <a class="btn-account" href = "register.html" >Don't have an account?</a>
+                    </div>   
+                  </div>
+            </form>
+        </div>
+    </div>
+</body>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["email"].value;
+            var y = document.forms["myForm"]["password"].value;
+            
+            if (x == "" && y == "") {
+                alert("Email & password must be filled out");
+                return false;
+            }
+            if (x == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (y == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+    }
+    </script>
+</html>

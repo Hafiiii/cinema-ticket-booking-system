@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar {
+            position: fixed;
+            overflow: hidden;
+            width: 100%;
+            background-color: rgba(54, 53, 53, 0.9);
+            transition: top 0.4s;
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.54);
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            display: block;
+            padding: 10px;
+            z-index: 99;
+        }
+
+        .navbar ul {
+            padding: 0 0 0 100px;
+            margin: 0;
+            list-style: none;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar .logo {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: auto;
+            float: left;
+        }
+
+        .navbar a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            padding: 5px;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            color: grey;
+        }
+
+        .navbar #login, .navbar #register {
+            float: right;
+            border: 1.5px solid #413f3d;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px #413f3d; 
+            background-color: rgba(255, 255, 255, 0.188);
+            padding-left: 8px;
+            padding-right: 8px;
+            margin-right: 20px;
+        }
+
+        .navbar #login:hover, .navbar #register:hover {
+            background-color: black;
+            color: white;
+        }
+
+        @media only screen and (max-width: 850px) {
+            html {
+                font-size: 2px;
+            }
+
+            .navbar {
+                padding: 0 15px;
+            }
+        }
+    </style>   
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <a href="index.html"><img class="logo" src="images/blackout.png"></a>
+            <li><a href="user_showtimes.html" >SHOWTIMES</a></li>
+            <li><a href="user_food&beverages.html">FOOD & BEVERAGES</a></li>
+            <li><a href="user_promotions.html">PROMOTIONS</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+            <a href="register.html" id="register" class="button">REGISTER</a>
+            <a href="login.html" id="login" class="button">LOGIN</a>
+        </ul>
+    </div>
+</body>
+</html>

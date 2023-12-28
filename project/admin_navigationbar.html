@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar  {
+            height: 96%;
+            width: 20%;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(48, 47, 47);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 30px;
+            padding: auto;
+            margin: auto;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul a {
+            padding: 25px 50px;
+            text-decoration: none;
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.449);
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .navbar ul a:hover {
+            color: white;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            /*Navigation bar*/
+
+            .navbar ul a:not(:first-child) {
+                display: none;
+            }
+
+            .navbar ul a {
+                font-size: 7px;
+            }
+            
+            .navbar ul a:hover {
+                color: white;
+            }
+
+            .fa {
+                float: right;
+                display: block;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav" class="navbar">
+        <ul>
+            <li><a href="admin_index.html" class="active">DASHBOARD</a></li>
+            <li><a href="admin_addmovies.php">ADD MOVIES</a></li>
+            <li><a href="admin_updatemovies.php">UPDATE MOVIES</a></li>
+            <li><a href="admin_food&beverages.html">FOOD & BEVERAGES</a></li>
+            <li><a href="admin_promotions.html">PROMOTIONS</a></li>
+            <li><a href="admin_testimonials.html">TESTIMONIALS</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
